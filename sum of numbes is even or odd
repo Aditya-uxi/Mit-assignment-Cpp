@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+class whole
+{
+    public:
+    int a,b,c;
+
+    void getdata()
+    {
+        cout<<"num 1:"<<endl;
+        cin>>a;
+        cout<<"num 2:"<<endl;
+        cin>>b;
+        c=a+b;
+    }
+void display()
+    {
+    if  (c%2==0)
+{ cout<<"num is even"<<endl;
+    }
+    else
+    {
+        cout<<"num is odd";
+    } 
+}
+};
+int main() 
+{ whole w1;
+    w1.getdata();
+    w1.display();
+return 0;
+}

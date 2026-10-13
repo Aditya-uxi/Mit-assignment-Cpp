@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+class number
+{
+    public:
+
+    int a,square;
+
+    void getdata()
+    {
+        cout<<"num is:"<<endl;
+        cin>>a;
+        square=a*a;      
+    }
+void display()
+    {
+         cout<<"square of num is:"<<square<<endl;  
+    }  
+};
+int main() 
+{ number w1;
+    w1.getdata();
+    w1.display();
+return 0;
+}

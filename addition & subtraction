@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+class calculator
+{
+    public:
+    int a,b,add,sub;
+    void getdata()
+    {
+        cout<<"num 1:"<<endl;
+        cin>>a;
+        cout<<"num2:"<<endl;
+        cin>>b;
+        add=a+b;
+        sub=a-b;
+    }
+void display()
+    {
+        cout<<"addition of to num is:"<<add<<endl;
+        cout<<"subtraction is:"<<sub<<endl;
+    } 
+};
+int main() 
+{ calculator w1;
+    w1.getdata();
+    w1.display();
+return 0;
+}

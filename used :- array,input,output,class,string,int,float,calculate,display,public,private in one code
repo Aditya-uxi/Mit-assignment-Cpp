@@ -1,0 +1,49 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class student
+{ 
+    
+    
+    private:
+string name;
+int rollno;
+float marks[3];
+float total,avg;
+
+    public:
+    void getdata()
+    {
+cout<<"Enter Roll no"<<endl;
+    cin>>rollno;
+    cout<<"Enter Name"<<endl;
+    cin>>name;
+    cout<<"marks of subject 1"<<endl;
+        cin>>marks[0];
+ cout<<"marks of subject 2"<<endl;
+        cin>>marks[1];
+ cout<<"marks of subject 3"<<endl;
+        cin>>marks[2];
+  };
+void calculate()
+{
+total= marks[0]+marks[1]+marks[2];
+avg= total/3;
+}
+void display()
+{
+cout<<"Total mark's="<<total<<endl;
+cout<<"Avarage="<<avg<<endl;
+}
+};
+
+  int main()
+{
+    student s1;
+    s1.getdata();
+    s1.calculate();
+    s1.display();
+
+    return 0;
+} 
